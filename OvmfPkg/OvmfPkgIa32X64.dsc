@@ -1051,3 +1051,8 @@
       Tpm12DeviceLib|SecurityPkg/Library/Tpm12DeviceLibDTpm/Tpm12DeviceLibDTpm.inf
   }
 !endif
+
+#
+# M2Semi
+#
+OvmfPkg/M2semi/HelloWorld/HelloWorld.inf
