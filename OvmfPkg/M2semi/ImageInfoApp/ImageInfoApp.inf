@@ -1,0 +1,37 @@
+[Defines]
+  INF_VERSION                    = 0x00010005
+  BASE_NAME                      = ImageInfoApp
+  FILE_GUID                      = D7C22E38-9552-43DA-9C1D-8F42830485BC
+  MODULE_TYPE                    = UEFI_APPLICATION
+  VERSION_STRING                 = 1.0
+  ENTRY_POINT                    = ImageInfoAppEntryPoint
+
+[Sources]
+  ImageInfoApp.c
+  AppSupport.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+  ShellPkg/ShellPkg.dec
+
+[LibraryClasses]
+  UefiApplicationEntryPoint
+  UefiLib
+  PcdLib
+  PrintLib
+  BaseLib
+  DebugLib
+  ShellLib
+  DevicePathLib
+
+[FeaturePcd]
+
+[Pcd]
+
+
+[Protocols]
+  gEfiShellProtocolGuid
+  gEfiShellParametersProtocolGuid
+  gEfiLoadedImageProtocolGuid
+  gEfiDevicePathToTextProtocolGuid
