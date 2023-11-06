@@ -1,0 +1,37 @@
+[Defines]
+  INF_VERSION                    = 0x00010005
+  BASE_NAME                      = Time
+  FILE_GUID                      = 6B5E76AB-3BEC-4CF4-88A4-BE0550D0B69A
+  MODULE_TYPE                    = UEFI_APPLICATION
+  VERSION_STRING                 = 1.0
+  ENTRY_POINT                    = Time
+  UEFI_HII_RESOURCE_SECTION      = TRUE
+
+[Sources]
+  Time.c
+  AppSupport.c
+
+[Packages]
+  MdePkg/MdePkg.dec
+  MdeModulePkg/MdeModulePkg.dec
+  ShellPkg/ShellPkg.dec
+
+[LibraryClasses]
+  UefiApplicationEntryPoint
+  UefiLib
+  PcdLib
+  PrintLib
+  UefiBootServicesTableLib
+  BaseLib
+  DebugLib
+  ShellLib
+
+[FeaturePcd]
+
+[Pcd]
+
+[UserExtensions.TianoCore."ExtraFiles"]
+
+[Protocols]
+  gEfiShellProtocolGuid
+  gEfiShellParametersProtocolGuid

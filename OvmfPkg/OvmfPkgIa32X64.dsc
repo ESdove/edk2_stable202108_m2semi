@@ -1057,3 +1057,4 @@
 #
 OvmfPkg/M2semi/HelloWorld/HelloWorld.inf
 OvmfPkg/M2semi/ImageInfoApp/ImageInfoApp.inf
+OvmfPkg/M2semi/Time/Time.inf
